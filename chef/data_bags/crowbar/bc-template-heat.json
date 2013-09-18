@@ -1,0 +1,29 @@
+{
+  "id": "bc-template-heat",
+  "description": "Installation for Heat",
+  "attributes": {
+    "heat": {
+      "foo": "bar"
+    }
+  },
+  "deployment": {
+    "heat": {
+      "crowbar-revision": 0,
+      "element_states": {
+        "heat-server": [ "readying", "ready", "applying" ]
+      },
+      "elements": {},
+      "element_order": [
+        [ "heat-server" ]
+      ],
+      "config": {
+        "environment": "heat-base-config",
+        "mode": "full",
+        "transitions": false,
+        "transition_list": [
+        ]
+      }
+    }
+  }
+}
+

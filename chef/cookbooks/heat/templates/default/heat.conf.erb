@@ -1,0 +1,10 @@
+[DEFAULT]
+# Show more verbose log output (sets INFO log level output)
+verbose = <%= node[:heat][:verbose] %>
+
+# Show debugging output in logs (sets DEBUG log level output)
+debug = <%= node[:heat][:debug] %>
+
+[app:heat-api]
+paste.app_factory = heat.server:app_factory
+
