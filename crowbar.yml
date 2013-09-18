@@ -61,18 +61,5 @@ locale_additions:
         edit_deployment:
           deployment: Deployment
 
-debs:
-  ubuntu-12.04:
-    repos:
-      - deb http://ubuntu-cloud.archive.canonical.com/ubuntu precise-updates/havana main
-      - deb http://ubuntu-cloud.archive.canonical.com/ubuntu precise-proposed/havana main
-    pkgs:
-      - heat-api-cfn
-      - heat-api-cloudwatch
-      - heat-api
-      - heat-common
-      - heat-engine
-      - python-heat
-
 git_repo:
   - heat https://github.com/openstack/heat stable/grizzly
